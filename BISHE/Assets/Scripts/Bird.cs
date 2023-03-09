@@ -62,7 +62,7 @@ public class Bird : MonoBehaviour
     IEnumerator ChangeAnimation()
     {
         birdAnim.SetTrigger("SwitchToHover");
-        yield return new WaitForSeconds(5);
+        yield return new WaitForSeconds(2);
         birdAnim.SetTrigger("SwitchToFly");
 
     }

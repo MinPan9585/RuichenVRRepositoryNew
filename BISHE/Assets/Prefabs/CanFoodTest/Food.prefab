@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 636670372786699482}
   - component: {fileID: 3478727859785891133}
   - component: {fileID: 3857471508643313185}
-  m_Layer: 7
+  m_Layer: 9
   m_Name: Food
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -268,3 +268,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6be57db189fd93549aa43c27b867e080, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bird: {fileID: 0}
