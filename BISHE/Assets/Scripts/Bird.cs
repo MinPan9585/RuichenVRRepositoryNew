@@ -53,7 +53,9 @@ public class Bird : MonoBehaviour
 
             if (Vector3.Distance(transform.position, food.transform.position) <= 0.2f)
             {
+                
                 Destroy(food.gameObject);
+                Can.foodAmount = 0;
                 isAttracted = false;
             }
         }
