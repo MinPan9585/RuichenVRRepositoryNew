@@ -5,7 +5,7 @@ using UnityEngine;
 public class Bird : MonoBehaviour
 {
     public Transform[] waypoints;
-    public int index = 1;
+    public int index = 0;
     public float speed;
     public Transform target;
     private Animator birdAnim;
@@ -28,16 +28,13 @@ public class Bird : MonoBehaviour
 
             if (Vector3.Distance(transform.position, target.position) <= 0.2f)
             {
-                if (index == 1)
+
+                index++;
+                if (index == waypoints.Length)
                 {
-                    target = waypoints[0];
                     index = 0;
                 }
-                else
-                {
-                    target = waypoints[1];
-                    index = 1;
-                }
+                target = waypoints[index];
             }
         }
         else
