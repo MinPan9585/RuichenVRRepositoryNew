@@ -9,6 +9,7 @@ public class Bird : MonoBehaviour
     public float speed;
     public Transform target;
     private Animator birdAnim;
+    private AudioSource birdsfx;
 
     public bool isAttracted = false;
     public Vector3 foodPosition;
@@ -17,6 +18,7 @@ public class Bird : MonoBehaviour
     {
         target = waypoints[index];
         birdAnim = GetComponent<Animator>();
+        birdsfx = GetComponent<AudioSource>();
     }
 
     void Update()
@@ -52,6 +54,7 @@ public class Bird : MonoBehaviour
             {
                 
                 Destroy(food.gameObject);
+                birdsfx.Play();
                 Can.foodAmount = 0;
                 isAttracted = false;
             }

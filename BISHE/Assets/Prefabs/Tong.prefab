@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 3088495541251627123}
   m_Layer: 0
   m_Name: Tong
-  m_TagString: Untagged
+  m_TagString: Tong
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -47,8 +47,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.4959755, y: 0.57573843, z: 0.40098572}
-  m_Center: {x: -0.0023860931, y: 0.5386331, z: -0.022880554}
+  m_Size: {x: 0.4959755, y: 0.8405136, z: 0.40098572}
+  m_Center: {x: -0.0023860931, y: 0.40624553, z: -0.022880554}
 --- !u!54 &536367751627146661
 Rigidbody:
   m_ObjectHideFlags: 0
