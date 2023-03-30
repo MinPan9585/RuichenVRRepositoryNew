@@ -9,7 +9,7 @@ public class BirdOnGround: MonoBehaviour
     public float speed;
     public Transform target;
     private Animator birdAnim;
-    private float timer = 5f;
+    private float timer = 7f;
 
 
     private void Start()

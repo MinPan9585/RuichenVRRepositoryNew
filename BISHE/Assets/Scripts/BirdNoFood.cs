@@ -33,7 +33,7 @@ public class BirdNoFood : MonoBehaviour
                 target = waypoints[index];
             }
     }
-
+    
     IEnumerator ChangeAnimation()
     {
         birdAnim.SetTrigger("SwitchToHover");
