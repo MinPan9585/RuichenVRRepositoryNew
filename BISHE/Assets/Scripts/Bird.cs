@@ -10,6 +10,7 @@ public class Bird : MonoBehaviour
     public Transform target;
     private Animator birdAnim;
     private AudioSource birdsfx;
+    public UIWheel uiwheel;
 
     public bool isAttracted = false;
     public Vector3 foodPosition;
@@ -54,6 +55,8 @@ public class Bird : MonoBehaviour
             {
                 
                 Destroy(food.gameObject);
+                uiwheel.score += 10;
+                uiwheel.progress += 0.1f;
                 birdsfx.Play();
                 Can.foodAmount = 0;
                 isAttracted = false;
