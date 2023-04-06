@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Hand
   - Tong
+  - Ocean
   layers:
   - Default
   - TransparentFX
@@ -18,8 +19,8 @@ TagManager:
   - Hand
   - Food
   - AirWall
-  - 
-  - 
+  - Daoju
+  - PostProcessing
   - 
   - 
   - 
