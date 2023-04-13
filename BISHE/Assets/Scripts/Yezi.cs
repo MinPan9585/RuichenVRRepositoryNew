@@ -6,25 +6,19 @@ public class Yezi : MonoBehaviour
 {
    
     public int Blood = 10;
-    private void OnCollisionEnter(Collision collision)
+    public Rigidbody rb;
+    public Collider col;
+    private void OnTriggerEnter(Collider other)
     {
-        if (collision.gameObject.tag == "Bullet")
+        if (other.gameObject.tag == "Bullet")
         {
             Blood -= 2;
             if (Blood <= 0)
             {
-                Destroy(this.gameObject);
+                //Destroy(this.gameObject);
+                rb.useGravity = true;
+                col.isTrigger = false;
             }
         }
-
-
-
-
-
     }
-
-
-
-
-
 }

@@ -11,8 +11,16 @@ public class UIWheel : MonoBehaviour
     public Image wheel;
     public float progress = 0.0f;
 
+    public GameObject Tong;
+    public bool isTongActive = false;
+
     void Update()
     {
+        if(score >= 50 && isTongActive == false)
+        {
+            Tong.SetActive(true);
+            isTongActive = true;
+        }
         //if (score >= 100)
             //return;
         //if(progress>= 1f)
