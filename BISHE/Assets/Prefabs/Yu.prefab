@@ -45,6 +45,7 @@ GameObject:
   - component: {fileID: 7805260496514573308}
   - component: {fileID: 8370222246223721879}
   - component: {fileID: 9211950800408829047}
+  - component: {fileID: 8333335187683210390}
   m_Layer: 11
   m_Name: Yu
   m_TagString: Untagged
@@ -234,6 +235,19 @@ MonoBehaviour:
   m_ForceGravityOnDetach: 0
   m_RetainTransformParent: 1
   m_AttachPointCompatibilityMode: 0
+--- !u!114 &8333335187683210390
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4028328018045947725}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d162e2b688727874b885c3cb9c3fbaad, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sfxyu: {fileID: 0}
 --- !u!1 &6013169495735351889
 GameObject:
   m_ObjectHideFlags: 0

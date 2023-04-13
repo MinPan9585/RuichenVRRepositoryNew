@@ -115,8 +115,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.027083848, y: 0.027394287, z: 0.00436443}
-  m_Center: {x: 0.0009305691, y: 0.0005546188, z: 0.00025338423}
+  m_Size: {x: 0.02708385, y: 0.027394287, z: 0.011005565}
+  m_Center: {x: 0.00093056954, y: 0.00055461895, z: 0.0035739488}
 --- !u!114 &8075653265135156057
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -245,3 +245,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sfxbeike: {fileID: 0}
+  uiwheel: {fileID: 0}

@@ -21,7 +21,7 @@ public class Food : MonoBehaviour
     void Start()
     {
         bird = FindObjectOfType<Bird>();
-        Invoke("AttractBird", 5f);
+        Invoke("AttractBird", 7f);
         rb = GetComponent<Rigidbody>();
     }
 

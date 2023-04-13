@@ -55,8 +55,10 @@ public class Bird : MonoBehaviour
             {
                 
                 Destroy(food.gameObject);
-                uiwheel.score += 10;
-                uiwheel.progress += 0.1f;
+                //鸟吃食物加分
+                uiwheel.score += 5;
+                uiwheel.progress += 0.15f;
+
                 birdsfx.Play();
                 Can.foodAmount = 0;
                 isAttracted = false;

@@ -13,12 +13,12 @@ public class UIWheel : MonoBehaviour
 
     void Update()
     {
-        if (score >= 100)
-            return;
-        if(progress>= 1f)
-        {
-            return;
-        }
+        //if (score >= 100)
+            //return;
+        //if(progress>= 1f)
+        //{
+            //return;
+        //}
         if (Input.GetKeyDown(KeyCode.A))
         {
             score += 10;

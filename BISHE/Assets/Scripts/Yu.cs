@@ -4,15 +4,13 @@ using UnityEngine;
 
 public class Yu : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    public AudioSource sfxyu;
+    private void OnCollisionEnter(Collision collision)
     {
-        
-    }
+        if (collision.gameObject.tag == "Ocean")
+        {
 
-    // Update is called once per frame
-    void Update()
-    {
-        
+            sfxyu.Play();
+        }
     }
 }
