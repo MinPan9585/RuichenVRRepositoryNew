@@ -6,7 +6,8 @@ public class Beike : MonoBehaviour
 {
     public AudioSource sfxbeike;
     public UIWheel uiwheel;
-    
+    public ParticleSystem ps;
+    public ParticleSystem ps2;
 
     private void OnCollisionEnter(Collision collision)
     {
@@ -17,6 +18,12 @@ public class Beike : MonoBehaviour
             uiwheel.progress += 0.01f;
            
             sfxbeike.Play();
+            ps.Play();
         }
+        if (collision.gameObject.tag == "Ocean")
+        {
+            ps2.Play();
+        }
+
     }
 }

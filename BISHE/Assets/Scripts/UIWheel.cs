@@ -11,21 +11,40 @@ public class UIWheel : MonoBehaviour
     public Image wheel;
     public float progress = 0.0f;
 
-    public GameObject Tong;
-    public bool isTongActive = false;
+    public GameObject Can;
+    public bool isCanActive = false;
+
+    public GameObject Shuiqiang;
+    public bool isShuiqiangActive = false;
+
+    public GameObject Hailuo;
+    public bool isHailuoActive = false;
+
 
     void Update()
     {
-        if(score >= 50 && isTongActive == false)
+        if(score >= 30 && isCanActive == false)
         {
-            Tong.SetActive(true);
-            isTongActive = true;
+            Can.SetActive(true);
+            isCanActive = true;
+        }
+
+        if (score >= 60 && isShuiqiangActive == false)
+        {
+           Shuiqiang.SetActive(true);
+            isShuiqiangActive = true;
+        }
+
+        if (score >= 100 && isHailuoActive == false)
+        {
+            Hailuo.SetActive(true);
+            isHailuoActive = true;
         }
         //if (score >= 100)
-            //return;
+        //return;
         //if(progress>= 1f)
         //{
-            //return;
+        //return;
         //}
         if (Input.GetKeyDown(KeyCode.A))
         {

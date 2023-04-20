@@ -56,9 +56,9 @@ public class Bird : MonoBehaviour
                 
                 Destroy(food.gameObject);
                 //鸟吃食物加分
-                uiwheel.score += 5;
-                uiwheel.progress += 0.15f;
-
+                uiwheel.score += 3;
+                uiwheel.progress += 0.03f;
+                //
                 birdsfx.Play();
                 Can.foodAmount = 0;
                 isAttracted = false;
@@ -69,7 +69,7 @@ public class Bird : MonoBehaviour
     IEnumerator ChangeAnimation()
     {
         birdAnim.SetTrigger("SwitchToHover");
-        yield return new WaitForSeconds(2);
+        yield return new WaitForSeconds(1);
         birdAnim.SetTrigger("SwitchToFly");
 
     }
