@@ -8,6 +8,7 @@ public class Can : MonoBehaviour
     public void CanSelect()
     {
         transform.GetChild(0).gameObject.SetActive(true);
+        GameObject.FindWithTag("arrow").SetActive(false);
     }
 
     public void CanSelectExit()
