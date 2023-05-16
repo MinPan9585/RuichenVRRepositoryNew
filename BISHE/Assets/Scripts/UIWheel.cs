@@ -46,11 +46,11 @@ public class UIWheel : MonoBehaviour
         //{
         //return;
         //}
-        if (Input.GetKeyDown(KeyCode.A))
-        {
-            score += 10;
-            progress += 0.1f;
-        }
+        //if (Input.GetKeyDown(KeyCode.A))
+        //{
+           // score += 10;
+            //progress += 0.1f;
+        //}
         scoreText.text = score.ToString();
         wheel.fillAmount = progress;
     }

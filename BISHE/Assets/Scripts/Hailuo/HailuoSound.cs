@@ -5,7 +5,7 @@ using UnityEngine;
 public class HailuoSound : MonoBehaviour
 {
     private bool playSound = false;
-    public AudioSource audio;
+    public AudioSource sfxjingyu1;
     public void HailuoGrabEnter()
     {
         playSound = true;
@@ -20,11 +20,11 @@ public class HailuoSound : MonoBehaviour
     {
         if(playSound == true && Vector3.Distance(transform.position, Camera.main.transform.position)<= 0.2f)
         {
-            audio.Play();
+            sfxjingyu1 .Play();
         }
         else
         {
-            audio.Pause();
+            sfxjingyu1.Pause();
         }
     }
 }
