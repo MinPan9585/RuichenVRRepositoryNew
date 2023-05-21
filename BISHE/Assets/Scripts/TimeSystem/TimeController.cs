@@ -6,9 +6,10 @@ public class TimeController : MonoBehaviour
 {
     public Transform directionalLight;
     public float rotationSpeed;
-   
-    
-    
+    private bool sunRotate = true;
+
+
+
     public GameObject[] beike;
     public Material[] skyboxMaterial;
 
@@ -18,6 +19,7 @@ public class TimeController : MonoBehaviour
     public float shizhenSpeed;
     public GameObject Shizhen;
     public GameObject Fenzhen;
+   
 
     
     
@@ -25,9 +27,11 @@ public class TimeController : MonoBehaviour
     private void Update()
     {
         //太阳的旋转
-        directionalLight.Rotate(rotationSpeed * Time.deltaTime, 0, 0);
-        //Rotate();
-        //ClampRot(30, 150);
+        if (sunRotate)
+        {
+            directionalLight.Rotate(rotationSpeed * Time.deltaTime, 0, 0);
+        }
+        
        
         
 
@@ -40,7 +44,13 @@ public class TimeController : MonoBehaviour
             //换成中午的天空
             RenderSettings.skybox = skyboxMaterial[1];
             
+            //沙滩上的物体变少了
+            foreach (var item in beike)
+            {
+                item.SetActive(false);
+            }
 
+            
             //beike[0].SetActive(false);
             //textObject.SetActive(true);
             //sky.material = skyboxMaterial;
@@ -51,6 +61,13 @@ public class TimeController : MonoBehaviour
         {
             //换成下午的天空
             RenderSettings.skybox = skyboxMaterial[2];
+            //太阳光不转了
+            sunRotate = false;
+            //沙滩上的物体变多了
+            foreach (var item in beike)
+            {
+                item.SetActive(true);
+            }
 
 
 

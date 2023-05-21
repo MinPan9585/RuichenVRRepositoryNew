@@ -11,7 +11,7 @@ public class Yu : MonoBehaviour
     {
         if (collision.gameObject.tag == "Ocean")
         {
-
+            Debug.Log("wo shi yu");
             sfxyu.Play();
             uiwheel.score += 2;
             uiwheel.progress += 0.02f;
