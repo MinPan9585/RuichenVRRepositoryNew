@@ -4,9 +4,11 @@ using UnityEngine;
 
 public class Tips1 : MonoBehaviour
 {
-    public GameObject Tips;
-    public bool isTips1Active = false;
+    //public GameObject Tips;
+    //public bool isTips1Active = false;
     MeshRenderer meshRend;
+    public bool isMesh = false;
+
 
     void Start()
     {
@@ -16,16 +18,22 @@ public class Tips1 : MonoBehaviour
     
     void Update()
     {
-        if(isTips1Active == false && Vector3.Distance(transform.position, Camera.main.transform.position) <=5f)
+        if(isMesh ==false && Vector3.Distance(transform.position, Camera.main.transform.position) <=3f)
         {
-            isTips1Active = true;
+            isMesh = true;
             meshRend.enabled = true;
-            print("run");
+            //print("run");
         }
 
-        if(isTips1Active == true && Vector3.Distance(transform.position, Camera.main.transform.position) >= 10f)
-        {
-            Destroy(this.gameObject);
-        }
+        //if(Vector3.Distance(transform.position, Camera.main.transform.position) >= 5f)
+        //{
+            //meshRend.enabled = false;
+        //}
     }
+
+
+    //isTips1Active == false && 
+    //isTips1Active == true && 
+    //isTips1Active = true;
+    //Destroy(this.gameObject);
 }

@@ -23,7 +23,7 @@ public class TimeController : MonoBehaviour
 
     
     
-    public GameObject textObject;
+    //public GameObject textObject;
     private void Update()
     {
         //Ì«ÑôµÄÐý×ª

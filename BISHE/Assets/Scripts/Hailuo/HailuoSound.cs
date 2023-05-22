@@ -25,7 +25,7 @@ public class HailuoSound : MonoBehaviour
 
     private void Update()
     {
-        if(playSound && !isPlaying && Vector3.Distance(transform.position, Camera.main.transform.position) <= 2f)
+        if(playSound && !isPlaying && Vector3.Distance(transform.position, Camera.main.transform.position) <= 0.5f)
         {
             jingyusfx.Play();
             isPlaying = true;
