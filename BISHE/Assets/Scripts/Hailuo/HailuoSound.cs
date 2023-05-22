@@ -6,6 +6,7 @@ public class HailuoSound : MonoBehaviour
 {
     private bool playSound = false;
     private AudioSource jingyusfx;
+    bool isPlaying = false;
     //public AudioSource sfxjingyu1;
 
     private void Start()
@@ -24,13 +25,15 @@ public class HailuoSound : MonoBehaviour
 
     private void Update()
     {
-        if(playSound == true && Vector3.Distance(transform.position, Camera.main.transform.position)<= 1f)
+        if(playSound && !isPlaying && Vector3.Distance(transform.position, Camera.main.transform.position) <= 2f)
         {
             jingyusfx.Play();
+            isPlaying = true;
         }
-        else
+        else if(!playSound)
         {
             jingyusfx.Pause();
+            isPlaying = false;
         }
     }
     

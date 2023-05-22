@@ -6,15 +6,17 @@ public class Instan : MonoBehaviour
 {
     public GameObject objectToSpawn;
     public GameObject greenObject;
+
+    float timer = 3;
         
     private void Update()
     {
-        if(Time.time==3)
+        if(Time.time >= timer)
         {
             GameObject plane = Instantiate(objectToSpawn, greenObject.transform.position, Camera.main.transform.rotation);
             plane.transform.Translate(new Vector3(0, 0, 10), Space.Self);
             Debug.Log("chuxian");
-
+            timer = Mathf.Infinity;
         }
     }
 

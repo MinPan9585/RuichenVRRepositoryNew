@@ -6,10 +6,11 @@ public class Tips1 : MonoBehaviour
 {
     public GameObject Tips;
     public bool isTips1Active = false;
+    MeshRenderer meshRend;
 
     void Start()
     {
-        
+        meshRend = GetComponent<MeshRenderer>();
     }
 
     
@@ -18,6 +19,8 @@ public class Tips1 : MonoBehaviour
         if(isTips1Active == false && Vector3.Distance(transform.position, Camera.main.transform.position) <=5f)
         {
             isTips1Active = true;
+            meshRend.enabled = true;
+            print("run");
         }
 
         if(isTips1Active == true && Vector3.Distance(transform.position, Camera.main.transform.position) >= 10f)
