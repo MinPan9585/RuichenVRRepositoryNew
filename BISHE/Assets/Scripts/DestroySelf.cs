@@ -4,13 +4,13 @@ using UnityEngine;
 
 public class DestroySelf : MonoBehaviour
 {
-    public float timer;
+    float timer;
 
 
     void Update()
     {
         timer += Time.deltaTime;
-        if(timer >= 3)
+        if(timer >= 6)
         {
             Destroy(this.gameObject);
         }
